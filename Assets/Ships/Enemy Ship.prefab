@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4257196149912452}
   - component: {fileID: 33383761199196190}
   - component: {fileID: 23794691054273622}
+  - component: {fileID: 65799504337872336}
   m_Layer: 0
   m_Name: Enemy Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4257196149912452
 Transform:
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1589745332962688}
   m_Mesh: {fileID: 4300008, guid: ec2ed6fafcc53c64ba923b9ef7d5749f, type: 3}
+--- !u!65 &65799504337872336
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589745332962688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38938543, y: 0.6508082, z: 0.100909755}
+  m_Center: {x: -1.6794118e-16, y: 1.9735321e-16, z: -0.000000005587937}
