@@ -5,14 +5,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour {
-    [SerializeField] float levelLoadDay = 1f;
+    [Tooltip("In seconds")] [SerializeField] float levelLoadDelay = 1f;
+    [Tooltip("Fx prefab on player")] [SerializeField] GameObject deathFx;
     private void OnTriggerEnter(Collider other)
     {
         StartDeathSequence();
+        deathFx.SetActive(true);
+        Invoke("ReloadsLevel", levelLoadDelay);
     }
 
     private void StartDeathSequence()
     {
+        //ParticleSystem.Play(withChildren);
         SendMessage("OnPlayerDeath");
+    }
+    private void ReloadsLevel() //string referenced
+    {
+        SceneManager.LoadScene(1);
     }
 }
