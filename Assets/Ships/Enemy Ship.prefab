@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4257196149912452}
   - component: {fileID: 33383761199196190}
   - component: {fileID: 23794691054273622}
+  - component: {fileID: 114239588421207858}
   m_Layer: 0
   m_Name: Enemy Ship
   m_TagString: Untagged
@@ -34,13 +35,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1589745332962688}
-  m_LocalRotation: {x: 0.1250894, y: 0.20087476, z: 0.83598447, w: 0.49510816}
-  m_LocalPosition: {x: -17.744, y: 5.486, z: -1.201}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.14902923, y: -0.26996472, z: -0.95032465, w: 0.04233564}
+  m_LocalPosition: {x: -28.25, y: -4.9370027, z: 0.7740006}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 347.761, y: 24.68, z: 116.04101}
+  m_LocalEulerAnglesHint: {x: 328.283, y: 17.825, z: 180.00002}
 --- !u!23 &23794691054273622
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -56,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 79e41cf9e4ffcec479bd73a1f13912e7, type: 2}
+  - {fileID: 2100000, guid: e452c8f12eadad94b88ef3a0aa794f33, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1589745332962688}
   m_Mesh: {fileID: 4300008, guid: ec2ed6fafcc53c64ba923b9ef7d5749f, type: 3}
+--- !u!114 &114239588421207858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589745332962688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b7368a88672bd49a61a356054842d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathFX: {fileID: 1975633777635162, guid: 58ea15d7bb758c34b97f0d2e91746c5d, type: 2}

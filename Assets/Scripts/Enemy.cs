@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    [SerializeField] GameObject DeathFX;
+    [SerializeField] Transform parent;
 	// Use this for initialization
 	void Start () {
         AddNonTriggerBoxCollider();
@@ -15,12 +17,14 @@ public class Enemy : MonoBehaviour {
 	}
     private void OnParticleCollision(GameObject other)
     {
+        GameObject Fx= Instantiate(DeathFX, transform.position, Quaternion.identity);
+        Fx.transform.parent= parent;
         Destroy(gameObject);
     }
 
     private void AddNonTriggerBoxCollider()
     {
         Collider enemyCollide= gameObject.AddComponent<BoxCollider>();
-        //enemyCollide.isTrigger{ };
+        enemyCollide.isTrigger= false;
     }
 }
