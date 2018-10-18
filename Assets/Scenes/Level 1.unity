@@ -126,12 +126,12 @@ GameObject:
   - component: {fileID: 27115215}
   - component: {fileID: 27115214}
   m_Layer: 0
-  m_Name: Left Bullets
+  m_Name: Left Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &27115213
 Transform:
   m_ObjectHideFlags: 0
@@ -9393,6 +9393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathFX: {fileID: 1975633777635162, guid: 58ea15d7bb758c34b97f0d2e91746c5d, type: 2}
   parent: {fileID: 510763218}
+  scorePerKill: 10
+  maxHits: 4
 --- !u!1 &170146085
 GameObject:
   m_ObjectHideFlags: 0
@@ -9410,7 +9412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &170146086
 Transform:
   m_ObjectHideFlags: 0
@@ -13987,6 +13989,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0
@@ -14085,12 +14092,12 @@ GameObject:
   - component: {fileID: 350828431}
   - component: {fileID: 350828430}
   m_Layer: 0
-  m_Name: Right Bullets
+  m_Name: Right Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &350828429
 Transform:
   m_ObjectHideFlags: 0
@@ -18749,6 +18756,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0
@@ -18809,6 +18821,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0
@@ -18863,6 +18880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathFX: {fileID: 1975633777635162, guid: 58ea15d7bb758c34b97f0d2e91746c5d, type: 2}
   parent: {fileID: 510763218}
+  scorePerKill: 10
+  maxHits: 4
 --- !u!1 &562667275 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1233082684321406, guid: f2936c3ffc03cf746a780f4dc11c68f2,
@@ -18881,6 +18900,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathFX: {fileID: 1975633777635162, guid: 58ea15d7bb758c34b97f0d2e91746c5d, type: 2}
   parent: {fileID: 510763218}
+  scorePerKill: 10
+  maxHits: 4
 --- !u!1 &570670175
 GameObject:
   m_ObjectHideFlags: 0
@@ -19060,6 +19081,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0
@@ -19240,6 +19266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathFX: {fileID: 1975633777635162, guid: 58ea15d7bb758c34b97f0d2e91746c5d, type: 2}
   parent: {fileID: 510763218}
+  scorePerKill: 10
+  maxHits: 4
 --- !u!1 &1027700560
 GameObject:
   m_ObjectHideFlags: 0
@@ -19320,7 +19348,7 @@ Transform:
   m_GameObject: {fileID: 1027700560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 411.6, y: 142.6, z: 803.5}
-  m_LocalScale: {x: 133.21469, y: 24.528578, z: 10}
+  m_LocalScale: {x: 133.21469, y: 32.603386, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -19377,6 +19405,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0
@@ -19456,6 +19489,9 @@ MonoBehaviour:
   posYawFactor: 5
   controlPitchFactor: -20
   controlRollFactor: -20
+  guns:
+  - {fileID: 27115212}
+  - {fileID: 350828428}
 --- !u!65 &1153609314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19628,7 +19664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7433e65806d980a45b491dc528318e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerHit: 10
 --- !u!108 &1183081900 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 108532012017142338, guid: 85aec737f4d53c842b5c7c41fd35e38a,
@@ -19786,6 +19821,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0
@@ -24495,6 +24535,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0
@@ -24790,6 +24835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathFX: {fileID: 1975633777635162, guid: 58ea15d7bb758c34b97f0d2e91746c5d, type: 2}
   parent: {fileID: 510763218}
+  scorePerKill: 10
+  maxHits: 4
 --- !u!1 &1713899378
 GameObject:
   m_ObjectHideFlags: 0
@@ -29447,6 +29494,11 @@ Prefab:
       propertyPath: parent
       value: 
       objectReference: {fileID: 510763218}
+    - target: {fileID: 114239588421207858, guid: 8de93ff720748e04ebf748d98a9ad489,
+        type: 2}
+      propertyPath: scorePerHit
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de93ff720748e04ebf748d98a9ad489, type: 2}
   m_IsPrefabAsset: 0

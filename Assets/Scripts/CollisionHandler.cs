@@ -16,7 +16,6 @@ public class CollisionHandler : MonoBehaviour {
 
     private void StartDeathSequence()
     {
-        //ParticleSystem.Play(withChildren);
         SendMessage("OnPlayerDeath");
     }
     private void ReloadsLevel() //string referenced

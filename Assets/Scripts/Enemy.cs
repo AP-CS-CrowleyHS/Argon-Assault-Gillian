@@ -7,9 +7,15 @@ public class Enemy : MonoBehaviour {
 
     [SerializeField] GameObject DeathFX;
     [SerializeField] Transform parent;
+
+    [SerializeField] int scorePerKill = 10;
+    [SerializeField] int maxHits= 5;
+
+    ScoreBoard scoreBoard;
 	// Use this for initialization
 	void Start () {
         AddNonTriggerBoxCollider();
+        scoreBoard = FindObjectOfType<ScoreBoard>();
 	}
     // Update is called once per frame
     void Update () {
@@ -17,8 +23,22 @@ public class Enemy : MonoBehaviour {
 	}
     private void OnParticleCollision(GameObject other)
     {
-        GameObject Fx= Instantiate(DeathFX, transform.position, Quaternion.identity);
-        Fx.transform.parent= parent;
+        if (maxHits <= 1)
+        {
+            KillEnemy();
+            scoreBoard.ScoreHit(scorePerKill);
+        }
+        else
+        {
+            maxHits--;
+        }
+        
+    }
+
+    private void KillEnemy()
+    {
+        GameObject Fx = Instantiate(DeathFX, transform.position, Quaternion.identity);
+        Fx.transform.parent = parent;
         Destroy(gameObject);
     }
 
