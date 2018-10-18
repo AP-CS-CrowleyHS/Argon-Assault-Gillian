@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23794691054273622}
   - component: {fileID: 114239588421207858}
   m_Layer: 0
-  m_Name: Enemy Ship
+  m_Name: Striker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,3 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathFX: {fileID: 1975633777635162, guid: 58ea15d7bb758c34b97f0d2e91746c5d, type: 2}
+  parent: {fileID: 0}
+  scorePerKill: 10
+  maxHits: 5

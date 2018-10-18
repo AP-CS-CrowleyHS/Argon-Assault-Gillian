@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33343349131736172}
   - component: {fileID: 23026153894443996}
   m_Layer: 0
-  m_Name: Enemy Ship 2
+  m_Name: Fighter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
