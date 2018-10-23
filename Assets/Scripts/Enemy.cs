@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour {
     [SerializeField] int scorePerKill = 10;
     [SerializeField] int maxHits= 5;
 
+    [SerializeField] AudioSource deathSound;
+
     ScoreBoard scoreBoard;
 	// Use this for initialization
 	void Start () {
@@ -37,6 +39,7 @@ public class Enemy : MonoBehaviour {
 
     private void KillEnemy()
     {
+        deathSound.Play();
         GameObject Fx = Instantiate(DeathFX, transform.position, Quaternion.identity);
         Fx.transform.parent = parent;
         Destroy(gameObject);

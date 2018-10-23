@@ -37,19 +37,20 @@ public class PlayerController : MonoBehaviour {
     {
         if (CrossPlatformInputManager.GetButton("Fire"))
         {
-            ActivateGuns(true);
+            SetGunsActive(true);
         }
         else
         {
-            ActivateGuns(false);
+            SetGunsActive(false);
         }
     }
 
-    private void ActivateGuns(bool activate)
+    private void SetGunsActive(bool activate)
     {
         foreach (GameObject gun in guns)
         {
-                gun.SetActive(activate);
+            
+            gun.SetActive(activate);
         }
     }
 
